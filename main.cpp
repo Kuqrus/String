@@ -5,7 +5,8 @@ void CreateAndFill(std::vector<String>& v)
     std::vector<const char*> str = { "Lorem", "ipsum", "dolor", "sit",
                                     "Amet", "consectetur", "adipiscing", "elit",
                                     "Maecenas", "Et", "felis", "at",
-                                    "mi", "tempus", "sodales" };
+                                    "mi", "tempus", "sodales"};
+
     for (const auto& s : str)
     {
         v.push_back(String(s));
@@ -14,6 +15,7 @@ void CreateAndFill(std::vector<String>& v)
 
 int main()
 {
+    /*
     std::vector<String> Strings;
 
     CreateAndFill(Strings);
@@ -30,4 +32,14 @@ int main()
 
     Utils::PrintVector(Strings);
     std::cout << std::endl;
+    */
+
+    char c;
+    //std::isalpha(c);
+
+    String s(c);
+
+    s += "121233";
+
+    std::cout << s << std::endl;
 }
